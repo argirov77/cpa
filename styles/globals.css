@@ -1,0 +1,181 @@
+/* ======================================
+   1. Reset, fonts and base styles
+====================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f4ff;  /* чуть светлее фон */
+  color: #444;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ======================================
+   2. Global wave pattern (background)
+====================================== */
+body::before {
+  content: "";
+  position: fixed;
+  bottom: -200px;
+  left: 0;
+  width: 200%;
+  height: 350px;
+  background-color: #ffffff;
+  border-radius: 50% 50% 0 0;
+  transform: translateX(-25%);
+  z-index: 0;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* ======================================
+   3. Headings and body text
+====================================== */
+h1, h2, h3 {
+  color: #ff6f61;   /* брендовый коралл */
+  font-weight: 800;
+  margin-bottom: 0.5em;
+}
+
+p {
+  color: #555;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+/* ======================================
+   4. Primary buttons
+====================================== */
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff !important;
+  background: linear-gradient(135deg, #ff6f61 0%, #ff957e 100%);
+  border: none;
+  border-radius: 28px;
+  box-shadow: 0 8px 20px rgba(255, 111, 97, 0.3);
+  text-decoration: none;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #e65b50 0%, #ff8069 100%);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(255, 111, 97, 0.4);
+}
+
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 111, 97, 0.3);
+  background: linear-gradient(135deg, #e65b50 0%, #ff8069 100%);
+}
+
+/* ======================================
+   5. Utility container
+====================================== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
+
+/* ======================================
+   6. Links — no underlines, neutral color
+====================================== */
+a,
+a:visited {
+  color: #444 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+}
+a:hover,
+a:focus {
+  color: #ff6f61 !important;
+}
+
+/* ======================================
+   7. Section-specific tweaks
+====================================== */
+
+/* PricingMethods cards */
+.pricing__grid {
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.pricing__card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.pricing__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* TrafficSources background */
+.traffic {
+  background-color: #f4f7ff;  /* светлый фон для читаемости */
+}
+.traffic__item {
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.traffic__item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Contact section */
+.contact {
+  background: linear-gradient(135deg, #ff6f61 0%, #ff957e 100%);
+  color: #fff;
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+.contact__title {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+.contact__address {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+.contact__email {
+  color: #fff;
+  text-decoration: underline;
+  display: block;
+  margin-top: 0.5rem;
+}
