@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section id="about" className="section section--alt section--about">
       <div className="container">
-        <h2 className="section-heading">About Teletron Media </h2>
+        <h2 className="section-heading">About Teletron Systems LP </h2>
 
         {/* Краткое введение */}
         <p className="about-intro">

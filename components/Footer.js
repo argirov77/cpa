@@ -11,7 +11,8 @@ export default function Footer() {
       <footer className="footer">
         <div className="container footer-container">
           <p className="footer-address">
-            24 Station Square, Suite 16, Inverness IV1 1LD, Scotland
+            5 South Charlotte Street, Edinburgh, Scotland, EH2 4AN
+
           </p>
           <button
             className="footer-link"
@@ -20,7 +21,7 @@ export default function Footer() {
             Privacy Policy
           </button>
         </div>
-        <p className="footer-copy">© 2025 Teletron Media Ltd. All rights reserved.</p>
+        <p className="footer-copy">© 2025 Teletron Systems LP. All rights reserved.</p>
       </footer>
 
       {isOpen && (
@@ -123,8 +124,9 @@ export default function Footer() {
 
             <h3>12. Contact Us</h3>
             <p>
-              Email: <a href="mailto:info@teletron.com">info@teletron.com</a><br/>
-              Address: 24 Station Square, Suite 16, Inverness IV1 1LD, Scotland
+              Email: <a href="mailto:main@teletron.digital">main@teletron.digital</a><br/>
+              Address: 5 South Charlotte Street, Edinburgh, Scotland, EH2 4AN
+
             </p>
           </div>
         </div>
