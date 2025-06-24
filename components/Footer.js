@@ -20,7 +20,7 @@ export default function Footer() {
             Privacy Policy
           </button>
         </div>
-        <p className="footer-copy">© 2025 Teletron. All rights reserved.</p>
+        <p className="footer-copy">© 2025 Teletron Media Ltd. All rights reserved.</p>
       </footer>
 
       {isOpen && (
@@ -38,7 +38,7 @@ export default function Footer() {
 
             <h3>1. Purpose</h3>
             <p>
-              This Privacy Policy explains how Teletron Limited (“Teletron”, “we”, “our” or “us”) collects, uses,
+              This Privacy Policy explains how Teletron Media Ltd. (“Teletron”, “we”, “our” or “us”) collects, uses,
               shares, and protects your personal data when you visit https://teletron.com (the “Website”). By using
               the Website, you agree to the terms below.
             </p>

@@ -48,7 +48,7 @@ export default function Header() {
       <div className="container header__inner">
         {/* Logo */}
         <Link href="#home" className="logo">
-          Teletron
+          Teletron Media 
         </Link>
 
         {/* Desktop nav */}
